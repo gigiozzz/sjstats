@@ -6,7 +6,7 @@ SJStats is a Java framework designed for generate statistic from a Java Server
 Description
 -----------
 
-More descrption coming soon ...
+More descrptions coming soon ...
 
 Getting started
 ---------------
@@ -18,3 +18,5 @@ Install [Git](http://git-scm.com/downloads) on your computer, open the Git Bash 
     git clone https://github.com/gigiozzz/sjstats.git
 
 You will get a new sub-directory named `sjstats` which contains the Maven Multi Module project.
+
+
