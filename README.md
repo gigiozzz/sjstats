@@ -6,7 +6,7 @@ SJStats is a Java framework designed for generate statistic from a Java Server
 Description
 -----------
 
-More descrptions coming soon ...
+More descrption coming soon ...
 
 Getting started
 ---------------
