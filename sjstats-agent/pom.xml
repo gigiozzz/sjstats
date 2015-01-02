@@ -1,0 +1,127 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>sjstats-agent</artifactId>
+  <packaging>war</packaging>
+  
+  <name>SjStats Agent</name>
+  <description>Server Java Stats Agent module</description>
+  
+  <properties>
+  	<spring.version>3.0.6.RELEASE</spring.version>
+  </properties>
+  
+  <dependencies>
+  
+	<dependency>
+		<groupId>com.gigiozzz.sjstats</groupId>
+		<artifactId>sjstats-websphere</artifactId>
+		<version>${project.parent.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.gigiozzz.sjstats</groupId>
+		<artifactId>sjstats-core</artifactId>
+		<version>${project.parent.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<version>2.5</version>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+		<type>jar</type>
+		<scope>compile</scope>
+		<version>1.2</version>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>admin.client</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/com.ibm.ws.admin.client_7.0.0.jar</systemPath>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>ibmkeycert</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ibmkeycert.jar</systemPath>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>ibmjceprovider</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ibmjceprovider.jar</systemPath>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>thinclient</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/com.ibm.ws.ejb.thinclient_7.0.0.jar</systemPath>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>orb</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/com.ibm.ws.orb_7.0.0.jar</systemPath>
+	</dependency>
+	
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    
+    <dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<scope>compile</scope>
+			<version>2.5</version>
+		</dependency>
+		
+<dependency>
+		    <groupId>com.timgroup</groupId>
+		    <artifactId>java-statsd-client</artifactId>
+		    <version>3.0.1</version>
+		</dependency>
+		
+		
+  </dependencies>
+  <parent>
+  	<version>1.0.0-SNAPSHOT</version>
+  	<groupId>com.gigiozzz.sjstats</groupId>
+  	<artifactId>sjstats</artifactId>
+  </parent>
+</project>

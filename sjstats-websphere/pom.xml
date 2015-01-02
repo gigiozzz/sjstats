@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>sjstats-websphere</artifactId>
+  	<name>SjStats WebSphere</name>
+	<description>Server Java Stats WebSphere impelmentation module</description>
+  
+  <packaging>jar</packaging>
+  <dependencies>
+	<dependency>
+		<groupId>com.gigiozzz.sjstats</groupId>
+		<artifactId>sjstats-core</artifactId>
+		<version>${project.parent.version}</version>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>admin.client</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/com.ibm.ws.admin.client_7.0.0.jar</systemPath>
+	</dependency>
+	<!--  
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>ibmkeycert</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ibmkeycert.jar</systemPath>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>ibmjceprovider</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ibmjceprovider.jar</systemPath>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>thinclient</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/com.ibm.ws.ejb.thinclient_7.0.0.jar</systemPath>
+	</dependency>
+	<dependency>
+	   <groupId>com.ibm.ws</groupId>
+	   <artifactId>orb</artifactId>
+	   <version>7.0.0</version>
+	   <scope>system</scope>
+	   <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/com.ibm.ws.orb_7.0.0.jar</systemPath>
+	</dependency>
+	-->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+    </dependency>
+    
+    <dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<scope>compile</scope>
+		</dependency>
+				
+		<dependency>
+	<groupId>org.bouncycastle</groupId>
+	<artifactId>bcprov-jdk14</artifactId>
+	<version>1.51</version>
+</dependency>
+		
+  </dependencies>
+  <parent>
+  	<groupId>com.gigiozzz.sjstats</groupId>
+  	<artifactId>sjstats</artifactId>
+  	<version>1.0.0-SNAPSHOT</version>
+  </parent>
+</project>
